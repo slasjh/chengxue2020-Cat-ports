@@ -1,13 +1,12 @@
 <html>
 <head>
     <title> 
-        504 Gateway Timeout
+        403 Forbidden
     </title>
 </head>
 <body>
-    <h1>Gateway Timeout</h1>
+    <h1>Forbidden</h1>
     <hr>
-    <p>The gateway did not receive a timely response from the upstream server or application.(code:0-6-31.11)
-    </p>
+    <p>Request forbidden by administrative rules.(code:20005-2-31.16)</p>
 </body>
 </html>
