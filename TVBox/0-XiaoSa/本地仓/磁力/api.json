@@ -1,18 +1,19 @@
 {
     "spider": "http://127.0.0.1:9978/file/TVBoxOSC/本地仓/spider.jar",
-    "wallpaper": "http://bobohome.ignorelist.com:20247/bing",
+    "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
     "logo": "http://127.0.0.1:9978/file/TVBox/logo.png",
+    "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
     "sites": [
         {
             "key": "豆瓣",
-            "name": "磁力｜首页",
+            "name": "磁力 • 首页",
             "type": 3,
             "api": "csp_Douban",
             "searchable": 0
         },
         {
             "key": "配置中心",
-            "name": "配置｜中心",
+            "name": "配置 • 中心",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
@@ -25,43 +26,23 @@
         },
         {
             "key": "荐片",
-            "name": "荐片｜磁力",
-            "api": "csp_Jianpian",
-            "type": 3,
-            "ext": "https://api.ztcgi.com"
-        },
-        {
-            "key": "修罗",
-            "name": "修罗｜磁力",
-            "api": "csp_Xlys",
-            "type": 3,
-            "ext": "https://xl01.com.de"
+            "name": "荐片 • 磁力",
+            "api": "csp_JianPian",
+            "type": 3
         },
         {
             "key": "七味",
-            "name": "七味｜磁力",
+            "name": "七味 • 磁力",
             "type": 3,
             "api": "csp_QnMp4",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": {
-                "url": "https://www.pkmp4.xyz,https://www.qwnull.com,https://www.qwmkv.com,https://www.qwfilm.com,https://www.qnmp4.com,https://www.qnnull.com,https://www.qnhot.com"
-            }
-        },
-        {
-            "key": "80S",
-            "name": "80S｜磁力",
-            "type": 3,
-            "api": "csp_BLSGod",
-            "playerType": 1,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
+            "ext": "https://www.qwshow.com,https://www.qwmkv.com,https://www.qwfilm.com,https://www.qwfun.com,https://www.qnnull.com,https://www.qnnull.com"
         },
         {
             "key": "New6v",
-            "name": "New6V｜磁力",
+            "name": "New6V • 磁力",
             "type": 3,
             "api": "csp_New6v",
             "searchable": 1,
@@ -71,7 +52,7 @@
         },
         {
             "key": "美剧迷",
-            "name": "美剧迷｜磁力",
+            "name": "美剧迷 • 磁力",
             "type": 3,
             "api": "csp_MeijuMi",
             "searchable": 1,
@@ -80,16 +61,17 @@
         },
         {
             "key": "迅雷吧",
-            "name": "迅雷吧｜磁力",
+            "name": "迅雷吧 • 磁力",
             "type": 3,
             "api": "csp_Xunlei8",
             "searchable": 1,
             "quickSearch": 1,
-            "filterable": 1
+            "filterable": 1,
+            "ext": "https://xunlei8.me"
         },
         {
             "key": "电影港",
-            "name": "电影港｜磁力",
+            "name": "电影港 • 磁力",
             "type": 3,
             "api": "csp_XYQHiker",
             "searchable": 1,
@@ -98,62 +80,27 @@
             "ext": "./XYQHiker/电影港.json"
         },
         {
-            "key": "狐狸君",
-            "name": "狐狸君｜磁力",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "changeable": 1,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./XBPQ/狐狸君.json"
-        },
-        {
-            "key": "Mp4电影",
-            "name": "Mp4电影｜磁力",
-            "type": 3,
-            "api": "csp_Mp4Mov",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
-            "key": "美剧天堂",
-            "name": "美剧天堂｜磁力",
-            "type": 3,
-            "api": "csp_MeijuTT",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
-            "key": "电影天堂",
-            "name": "电影天堂｜磁力",
-            "type": 3,
-            "api": "csp_DyGod",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
             "key": "版本信息",
-            "name": "版本｜信息",
+            "name": "版本 • 信息",
             "type": 3,
             "api": "csp_Market",
             "searchable": 0,
             "changeable": 0,
             "indexs": 0,
-            "ext": "https://pizazz.s3.bitiful.net/multi.json"
+            "ext": "https://oss-v1.wangmeipo.cn/236/multi.json"
         },
         {
             "key": "push_agent",
-            "name": "手机｜推送",
+            "name": "手机 • 推送",
             "type": 3,
             "api": "csp_Push",
             "searchable": 0,
             "filterable": 0,
             "changeable": 0
         }
+    ],
+    "lives": [
+        {}
     ],
     "rules": [
         {
